@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Download Hub</title>
+<link rel="icon" type="image/png" href="image/Logo.png">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>NHT REPUBLIC OF HACER</h1>
+    <ul>
+        <li>Home</li>
+        <li>Downloads</li>
+        <li>Categories</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Cyber Download Hub</h2>
+    <p>Secure & Fast ZIP Resources</p>
+</section>
+
+<!-- SEARCH -->
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search files...">
+</div>
+
+<!-- DOWNLOAD GRID -->
+<section class="grid" id="downloadList">
+
+    <div class="card" data-name="Windows 11" data-category="">
+        <h3>Windows 11</h3>
+        <p>Collection of cybersecurity tools</p>
+        <p>Size: 2.33 KB</p>
+        <button class="download-btn"><a href="zipfiles/Windows11.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="Windows 10" data-category="">
+        <h3>Windows 10</h3>
+        <p>Useful automation scripts</p>
+        <p>Size: 2.73 KB</p>
+        <button class="download-btn"><a href="zipfiles/Windows10.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="Windows 8" data-category="">
+        <h3>Windows 8</h3>
+        <p>Cybersecurity learning materials</p>
+        <p>Size: 1.62 KB</p>
+        <button class="download-btn"><a href="zipfiles/Windows8.zip" download>Download</a></button>
+    </div>
+
+</section>
+<section class="grid" id="downloadList">
+
+    <div class="card" data-name="Windows Server" data-category="">
+        <h3>Windows Server 2019 & 2016</h3>
+        <p>Windows</p>
+        <p>Size: 1.62 KB</p>
+        <button class="download-btn"><a href="zipfiles/Windows_Server.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="VMware" data-category="">
+        <h3>VMware</h3>
+        <p>Linux & Windows</p>
+        <p>Size: 1.80 KB</p>
+        <button class="download-btn"><a href="zipfiles/VMWare_Key.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="Brup Suite Pro" data-category="linux">
+        <h3>Brup Suite Pro</h3>
+        <p>Linux & Windows</p>
+        <p>Size: 40MB</p>
+        <button class="download-btn"><a href="" download>Download</a></button>
+    </div>
+
+</section>
+<section class="grid" id="downloadList">
+
+    <div class="card" data-name="Typing Master 10" data-category="">
+        <h3>Typing Master 10</h3>
+        <p>Collection of cybersecurity tools</p>
+        <p>Size: 8.96 MB</p>
+        <button class="download-btn"><a href="zipfiles/TypingMaster10.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="Typing Master 7" data-category="">
+        <h3>Typing Master 7</h3>
+        <p>Collection of cybersecurity tools</p>
+        <p>Size: 3.83 MB</p>
+        <button class="download-btn"><a href="zipfiles/TypingMaster7.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="MS Office 2019 Lifetime Activation Key" data-category="">
+        <h3>MS Office 2019 Lifetime Activation Key</h3>
+        <p>Useful automation scripts</p>
+        <p>Size: 1.10 KB</p>
+        <button class="download-btn"><a href="zipfiles/MS_Office2019.zip" download>Download</a></button>
+    </div>
+
+</section>
+<section class="grid" id="downloadList">
+
+    <div class="card" data-name="MS Office 365 Product Key" data-category="">
+        <h3>MS Office 365 Product Key</h3>
+        <p>Cybersecurity learning materials</p>
+        <p>Size: 1.12 KB</p>
+        <button class="download-btn"><a href="zipfiles/MS_Office365.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="MS Office 2016 Product Key" data-category="">
+        <h3>MS Office 2016 Product Key</h3>
+        <p>Useful automation scripts</p>
+        <p>Size: 1.20 KB</p>
+        <button class="download-btn"><a href="zipfiles/MS_Office2016.zip" download>Download</a></button>
+    </div>
+
+    <div class="card" data-name="Coming Soon" data-category="learning">
+        <h3>Coming Soon</h3>
+        <p>Cybersecurity learning materials</p>
+        <p>Size: 40MB</p>
+        <button class="download-btn"><a href="" download>Download</a></button>
+    </div>
+
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories">
+    <span onclick="filterCategory('all')">All</span>
+    <span onclick="filterCategory('linux')">Linux</span>
+    <span onclick="filterCategory('learning')">Scripts</span>
+    <span onclick="filterCategory('learning')">Learning</span>
+</section>
+
+
+
+
+
+
+
+
+<!-- Contact Us -->
+
+ <p>If you are unable to access the ZIP file due to a password requirement, please contact me for assistance.</p>
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <!-- Contact Form -->
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Social Media Links -->
+    <div class="social-icons">
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100075587227899" target="_blank" class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/abhinashirengbam/" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://twitter.com/yourusername" target="_blank" class="twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="http://api.whatsapp.com/send?phone=918415802600" target="_blank" class="whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Telegram -->
+        <a href="https://t.me/abhinashirengbam" target="_blank" class="telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <p>⚠️ This website is for educational and ethical cybersecurity purposes only.</p>
+    <p>© 2026 NHT. REPUBLIC OF HACKER.</p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>

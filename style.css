@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: #050505;
+    color: #0f0;
+    overflow-x: hidden;
+}
+
+/* MATRIX */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.8);
+    border-bottom: 1px solid #0f0;
+}
+
+nav h1 {
+    font-family: 'Orbitron';
+    color: #0ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: #0ff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: 'Orbitron';
+}
+
+.hero p {
+    margin: 10px 0;
+    color: #0ff;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: transparent;
+    border: 1px solid #0ff;
+    color: #0ff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0ff;
+    color: #000;
+}
+
+/* SEARCH */
+.search-box {
+    text-align: center;
+    margin: 30px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #0ff;
+    background: black;
+    color: #0ff;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #0ff;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px #0ff;
+}
+
+.card h3 {
+    color: #0ff;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.download-btn {
+    padding: 8px 15px;
+    border: none;
+    background: #0ff;
+    color: black;
+    cursor: pointer;
+}
+
+/* CATEGORY */
+.categories {
+    text-align: center;
+    padding: 40px;
+}
+
+.categories span {
+    margin: 10px;
+    padding: 10px 15px;
+    border: 1px solid #0ff;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #0f0;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container */
+.container {
+    width: 350px;
+    padding: 25px;
+    background: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ffcc;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    color: #00ffcc;
+}
+
+/* Form */
+form input,
+form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #00ffcc;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ccaa;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Colors */
+.facebook { background: #3b5998; }
+.instagram { background: #e1306c; }
+.twitter { background: #1da1f2; }
+.whatsapp { background: #25d366; }
+.telegram { background: #0088cc; }
+
+/* Hover */
+.social-icons a:hover {
+    transform: scale(1.2);
+}
