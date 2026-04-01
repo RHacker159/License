@@ -19,19 +19,21 @@
 <canvas id="matrix"></canvas>
 
 <!-- NAVBAR -->
-<nav>
-    <h1>NHT REPUBLIC OF HACKER</h1>
-    <ul>
-        <li>Home</li>
-        <li>Downloads</li>
-        <li>Categories</li>
-        <li>About</li>
-        <li>Contact</li>
-    </ul>
-</nav>
+<header class="heder">
+		<nav class="nvbar">
+		<a class="lgo"><img src="image/Logo.png">REPUBLIC OF HACKER</a>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle" class="menu-icon">&#9776;</label>
+			<ul class="menu-items">
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#">Download</a></li>
+				<li><a href="#Contact_me">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="Home">
     <h2>Cyber Download Hub</h2>
     <p>Secure & Fast ZIP Resources</p>
 </section>
@@ -147,61 +149,19 @@
     <span onclick="filterCategory('learning')">Learning</span>
 </section>
 
-
-
-
-
-
-
-
 <!-- Contact Us -->
-
- <p>If you are unable to access the ZIP file due to a password requirement, please contact me for assistance.</p>
-<div class="container">
+<div class="contact-container" id="Contact_me">
     <h1>Contact Us</h1>
+    <p>We would love to hear from you! Reach out through any of our social platforms or send us a message.</p>
 
-    <!-- Contact Form -->
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-
-    <!-- Social Media Links -->
     <div class="social-icons">
-
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100075587227899" target="_blank" class="facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/abhinashirengbam/" target="_blank" class="instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-
-        <!-- Twitter -->
-        <a href="https://twitter.com/yourusername" target="_blank" class="twitter">
-            <i class="fab fa-twitter"></i>
-        </a>
-
-        <!-- WhatsApp -->
-        <a href="http://api.whatsapp.com/send?phone=918415802600" target="_blank" class="whatsapp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-        <!-- Telegram -->
-        <a href="https://t.me/abhinashirengbam" target="_blank" class="telegram">
-            <i class="fab fa-telegram"></i>
-        </a>
-
+      <a href="https://www.instagram.com/abhinashirengbam/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100075587227899" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="http://api.whatsapp.com/send?phone=918415802600" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://t.me/abhinashirengbam" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+      <a href="https://www.linkedin.com/in/abhinash-irengbam-580a95302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </div>
 </div>
-
-
-
-
 
 <!-- FOOTER -->
 <footer>

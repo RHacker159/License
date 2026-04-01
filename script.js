@@ -2,17 +2,28 @@
 const canvas = document.getElementById("matrix");
 const ctx = canvas.getContext("2d");
 
-canvas.height = window.innerHeight;
-canvas.width = window.innerWidth;
-
 let letters = "01".split("");
 let fontSize = 14;
-let columns = canvas.width / fontSize;
+let columns;
 let drops = [];
 
-for (let i = 0; i < columns; i++) {
-    drops[i] = 1;
+// Function to set canvas size and initialize drops
+function initializeMatrix() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    columns = Math.floor(canvas.width / fontSize);
+    drops = [];
+    for (let i = 0; i < columns; i++) {
+        drops[i] = 1;
+    }
 }
+
+// Initialize for the first time
+initializeMatrix();
+
+// Update matrix when window is resized
+window.addEventListener("resize", initializeMatrix);
 
 function draw() {
     ctx.fillStyle = "rgba(0,0,0,0.05)";
@@ -55,26 +66,9 @@ function filterCategory(category) {
     });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* CONTACT FORM */
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
-
     alert("Message sent successfully!");
-
-    // Clear form after submit
     this.reset();
 });
