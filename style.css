@@ -34,12 +34,7 @@ canvas {
 	padding: 1rem 0%;
 	margin-bottom: 2rem;
 }
-.lgo span{
-	color: var(--main-color);
-	font-size: 2rem;
-	text-transform: capitalize;
-	font-weight: 600;
-}
+
 .nvbar a img{
     width: 80px;
     height: 50px;
@@ -55,7 +50,7 @@ canvas {
 	align-items: center;
 	background-color: rgba(43, 42, 42, 0.863);
 	color: #fff;
-	padding: 1rem 10%;
+	padding: 3%;
 
 }
 .heder .nvbar a{
@@ -63,9 +58,6 @@ canvas {
 	color: white;
 	font-weight: 500;
 	margin: 0 1rem;
-}
-.heder .nvbar a:hover{
-	color: var(--main-color);
 }
 .menu-items{
 	display: flex;
